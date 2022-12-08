@@ -43,9 +43,10 @@ class SimpleTodos extends Component {
   state = {todoList: initialTodosList}
 
   deleteTodo = id => {
+    console.log('Hi', id)
     const {todoList} = this.state
     const newTodoList = todoList.filter(todo => todo.id !== id)
-    this.setState = {todoList: newTodoList}
+    this.setState({todoList: newTodoList})
   }
 
   render() {
@@ -54,7 +55,15 @@ class SimpleTodos extends Component {
       <div className="bg">
         <div className="card">
           <h1 className="heading">Simple Todos</h1>
-          <ul></ul>
+          <ul>
+            {todoList.map(eachTodo => (
+              <TodoItem
+                key={eachTodo.id}
+                todoDetails={eachTodo}
+                deleteTodo={this.deleteTodo}
+              />
+            ))}
+          </ul>
         </div>
       </div>
     )
