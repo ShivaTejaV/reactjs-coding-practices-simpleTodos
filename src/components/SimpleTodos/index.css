@@ -7,23 +7,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5vh;
-  padding-right: 5vw;
-  padding-left: 5vw;
 }
 
 .card {
-  width: 90vw;
+  width: 90%;
   border-radius: 20px;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: space-between;
   font-family: Roboto;
-  padding: 20px;
+  padding: 15%;
 }
 
 .heading {
   color: #ff8542;
+  text-align: center;
 }
