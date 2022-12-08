@@ -3,13 +3,18 @@ import './index.css'
 import {Component} from 'react'
 
 const TodoItem = props => {
-  const {todoDetails} = props
+  const {todoDetails, deleteTodo} = props
   const {id, title} = todoDetails
 
+  const onDeleteTodo = () => {
+    deleteTodo(id)
+  }
   return (
     <li className="listItem">
-      <para className="title">{title}</para>
-      <button className="deleteButton">Delete</button>
+      <p className="title">{title}</p>
+      <button className="deleteButton" type="button" onClick={onDeleteTodo}>
+        Delete
+      </button>
     </li>
   )
 }
