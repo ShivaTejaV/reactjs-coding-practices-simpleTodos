@@ -49,7 +49,15 @@ class SimpleTodos extends Component {
   }
 
   render() {
-    return <TodoItem todoDetails={initialTodosList[0]} />
+    const {todoList} = this.state
+    return (
+      <div className="bg">
+        <div className="card">
+          <h1 className="heading">Simple Todos</h1>
+          <ul></ul>
+        </div>
+      </div>
+    )
   }
 }
 

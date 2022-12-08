@@ -1,1 +1,29 @@
 /* Write your CSS here */
+.bg {
+  background-color: #ffc2a0;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
+
+.card {
+  width: 90vw;
+  border-radius: 20px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Roboto;
+  padding: 20px;
+}
+
+.heading {
+  color: #ff8542;
+}
